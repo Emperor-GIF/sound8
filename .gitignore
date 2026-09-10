@@ -1,33 +1,27 @@
 # Prerequisites
 *.d
-
 # Object files
 *.o
 *.ko
 *.obj
 *.elf
-
 # Linker output
 *.ilk
 *.map
 *.exp
-
 # Precompiled Headers
 *.gch
 *.pch
-
 # Libraries
 *.lib
 *.a
 *.la
 *.lo
-
 # Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
-
 # Executables
 *.exe
 *.out
@@ -35,13 +29,11 @@
 *.i*86
 *.x86_64
 *.hex
-
 # Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
-
 # Kernel Module Compile Results
 *.mod*
 *.cmd
@@ -50,6 +42,60 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-
 # debug information files
 *.dwo
+
+# ========== 新增 ESP-IDF 相关 ==========
+**/build/
+build/
+*.bin
+flasher_args.json
+sdkconfig
+sdkconfig.old
+managed_components/
+.espressif/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+
+# ========== 新增语言服务缓存 ==========
+.clangd/
+.ccls-cache/
+compile_commands.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+
+# ========== 新增IDE本地配置（重点！自动忽略.vscode/.devcontainer） ==========
+**/.vscode/
+**/.devcontainer/
+*.user
+*.workspace
+*.suo
+*.sln.docstates
+
+# ========== 系统杂项文件 ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.directory
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# 临时文件
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
