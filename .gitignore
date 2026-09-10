@@ -44,7 +44,6 @@ Mkfile.old
 dkms.conf
 # debug information files
 *.dwo
-
 # ========== 新增 ESP-IDF 相关 ==========
 **/build/
 build/
@@ -59,7 +58,6 @@ CMakeFiles/
 cmake_install.cmake
 install_manifest.txt
 CTestTestfile.cmake
-
 # ========== 新增语言服务缓存 ==========
 .clangd/
 .ccls-cache/
@@ -73,7 +71,6 @@ venv/
 env/
 *.egg-info/
 dist/
-
 # ========== 新增IDE本地配置（重点！自动忽略.vscode/.devcontainer） ==========
 **/.vscode/
 **/.devcontainer/
@@ -81,7 +78,6 @@ dist/
 *.workspace
 *.suo
 *.sln.docstates
-
 # ========== 系统杂项文件 ==========
 # macOS
 .DS_Store
@@ -99,3 +95,5 @@ Desktop.ini
 *.bak
 *.tmp
 *.log
+# ========== STM32 CMake 缓存目录 ==========
+**/cmake/

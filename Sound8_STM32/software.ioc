@@ -222,7 +222,6 @@ PC8.GPIO_Label=RGBR
 PC8.Locked=true
 PC8.Signal=GPIO_Output
 PCC.Checker=false
-PCC.Display=Plot\: All Steps
 PCC.Line=STM32F405/415
 PCC.MCU=STM32F405RGTx
 PCC.PartNumber=STM32F405RGTx
